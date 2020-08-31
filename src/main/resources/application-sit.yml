@@ -1,0 +1,15 @@
+server:
+  port: 13080
+  servlet:
+    context-path: /
+
+spring:
+  profiles: sit
+  #mysql config
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/agent?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&useSSL=false&serverTimezone=Asia/Shanghai
+    userName: root
+    password: '123456'
+    maxActive: 200
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000

@@ -1,0 +1,50 @@
+spring:
+  profiles:
+    active: dev
+
+
+#mybatis
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+#mapper
+
+
+#pagehelper
+
+
+#default timeout config
+pagehelper:
+  helper-dialect: mysql
+  support-methods-argument: true
+  params: count= countSql
+  reasonable: false
+
+#default timeout config
+http:
+  api:
+    connection:
+      read-timeout: 60000
+      connect-timeout: 60000
+      connection-request-timeout:  60000
+
+#restTemplate's config
+
+config:
+  httpclient:
+    maxTotal: 1000
+    defaultMaxPerRoute: 1000
+    connect:
+      timeout: 50000
+    socket:
+      timeout: 50000
+
+#health check config
+management:
+  endpoint:
+    health:
+      slow-details: always
+  health:
+     mail:
+       enabled: false
