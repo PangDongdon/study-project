@@ -1,5 +1,7 @@
 package com.study.project.dao;
 
+import com.study.project.commom.base.BaseMapper;
+import com.study.project.dao.entity.UserEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -8,5 +10,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @Author: dongdong
  */
 @Mapper
-public interface UserDao {
+public interface UserDao extends BaseMapper<UserEntity> {
+
 }
