@@ -64,6 +64,17 @@ public class BaseEntity<T> implements Serializable {
     }
 
     /**
+     * 插入之前执行方法，需要手动调用
+     * */
+
+    public void preInsert(){
+        this.updateTime=new Date();
+        this.createTime=this.updateTime;
+        this.deleteFlag=DEL_FLAG_NORMAL;
+    }
+
+
+    /**
      * 删除标记
      *
      * */
