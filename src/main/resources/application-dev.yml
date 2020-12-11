@@ -1,5 +1,5 @@
 server:
-  port: 13080
+  port: 13081
   servlet:
     context-path: /
 
@@ -13,3 +13,6 @@ spring:
     password: '123456'
     maxActive: 200
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  redis:
+    host: 127.0.0.1
+    port: 6379

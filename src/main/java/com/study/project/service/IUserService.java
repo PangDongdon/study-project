@@ -10,4 +10,7 @@ import com.study.project.service.domin.User;
 public interface IUserService {
 
     User findById(String id,String appId);
+
+    /**渠道用户获取*/
+    User findChannelById(String appId,String clientId,String cnlToken,String timestamp);
 }

@@ -44,7 +44,12 @@ public class UserServiceImpl implements IUserService {
     }
 
     private List<String> getAdminPermissions(String userId) {
+        //返回登录人的权限集合
+        return null;
+    }
 
+    @Override
+    public User findChannelById(String appId, String clientId, String cnlToken, String timestamp) {
         return null;
     }
 }
